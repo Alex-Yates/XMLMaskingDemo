@@ -16,7 +16,7 @@ Our objective is to ensure all the names (first and last) are masked in either t
 
 ## How the masking set works
 
-1. First, we have a rule (05-0004) to copy the sensitive data from the XML block into a separate table.
+1. First, we have a rule (05-0004) to copy the sensitive data from the XML block into a separate table. (We need to do this so that we can pull the data into a Sync Manager).
 1. Once we've copied the data, we convert the XML column to nvarchar(MAX). (This allows us later to use Table to Text rules within Sync Managers to mask the data.)
 1. Next we use Sync Managers (15-0009 and 16-0010) to mask the first and last names in both the EMPLOYEE and EXPENSES tables. These work by creating temp mapping tables using the name data from both the EMPLOYEE table and the temp table we created in rule 05-0004 (which holds all the sensitive data from the XML in the EXPENSES table). Random names are generated in the mapping table. Then we use the mapping table to overwite the original values in both the EMPOYEE table, and the temp table we created in rule 05-0004. Finally, the Sync Managers use and additional Table-To-Text rule to override the values in the original EXPENSES table.
 1. Finally, in rule block 95, we have a couple of command rules to tidy up. We drop the table we created in rule 05-0004, and we convert the XML column data back from nvarchar(Max) datatype to XML.
