@@ -6,7 +6,7 @@ Challenge: How to mask XML data using a sync manager. The XML data contains some
 This demo assumes you have a SQL Server installed locally and that you can connect to the default instance using WindowsAuth/Integrated Security. You will need at least dbo access because you'll be creating, deleting and modifying databases.
 
 1. Run CreateDatabase.sql to create a sample database.
-1. Open the masking set DataMaskerMaskingSet.DMMaskSet using the tool Redgate Data Masker. (More info here: https://www.red-gate.com/products/data-masker/)
+1. Open the masking set DataMaskerMaskingSet.DMMaskSet using Redgate Data Masker. (More info here: https://www.red-gate.com/products/data-masker/)
 
 The sample database contains two tables (EMPLOYEE and EXPENSES). The tables each contain 3 rows of data. We have 3 employees, and 3 expenses. The expenses are stored in an XML column.
 
