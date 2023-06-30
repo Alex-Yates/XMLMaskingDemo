@@ -12,7 +12,7 @@ The sample database contains two tables (EMPLOYEE and EXPENSES). The tables each
 
 The XML data for the expenses contains the name of the employee who made the expense claim. Hence, we have a loose, unenforced reference between the two tables. 2 of the expenses were made by employees in the EMPLOYEE table. However, one of the expenses was made by someone who does not exist in the EMPLOYEE table. Perhaps they used to work for us but have since left? Or perhaps there was an error inputting the data?
 
-Our objective is to ensure all the names (first and last) are masked. We also want to maintain the existing relationships between expenses and employees.
+Our objective is to ensure all the names (first and last) are masked in either table. We also want to maintain the existing relationships between expenses and employees.
 
 ## How the masking set works
 
