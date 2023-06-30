@@ -1,0 +1,2172 @@
+<?xml version="1.0"?>
+<!--Data Masker DMSMasking Set-->
+<DMSSetContainer_MaskingSet>
+  <DMSVersion Value="7.1.37.8410" />
+  <MaskingSetId>Pjg//GxN50ia3PibmE9eH7xA0BaYsq1FmwiPIm3Ru2Y=</MaskingSetId>
+  <MaskingSetOptions>
+    <maskingSetNotesTitle Value="Comments and Notes" />
+    <maskingSetNotesComments Value="Comments and notes are displayed here.&#xD;&#xA;&#xD;&#xA;Use the Edit button on the Misc. Setup tab to change this information or to prevent it from being shown." />
+    <ShowNotesOnSetLoad Value="False" />
+    <NoShowSaveFeedback Value="False" />
+    <TestConnBeforeRunningSet Value="False" />
+    <EnableANDClausesOnT2TRules Value="False" />
+    <EnableAdvancedRuleTools Value="False" />
+    <SuppressNoRowsInStage2Warnings Value="False" />
+    <PermitCrossInstanceRules Value="False" />
+    <PermitCrossSchemaSyncMgrRules Value="False" />
+    <PermitCrossSchemaT2TRules Value="True" />
+    <Treat19000101AsEmptyDate Value="False" />
+    <LegacyPerformanceMode Value="False" />
+    <AutoCreateStatsTables Value="True" />
+    <AutoTruncateStatsTables Value="True" />
+    <EnableDeltaMarkers Value="True" />
+    <PutSetNameInWindowTitle Value="False" />
+    <CreateNewLogFileOnEachRun Value="False" />
+    <PermitIsNullsToBeForcedOff Value="False" />
+    <numWorkerThreads Value="2" />
+    <SpeedOrMemoryTradeoff Value="SPEEDORMEMORY_WANTSPEED" />
+    <DoNotUseTransactions Value="False" />
+    <AutoEmitRuleStatisticsReportToLog Value="True" />
+    <AutoEmitRuleStatisticsReportToFile Value="True" />
+    <AutoEmitRuleStatisticsReportDirectory Value="C:\Users\Alex.Yates\OneDrive - Redgate\Documents\Data Masker(SqlServer)\Reports" />
+    <AutoEmitTableStatsReportToLog Value="True" />
+    <AutoEmitTableStatsReportToFile Value="True" />
+    <AutoEmitTableStatsReportDirectory Value="C:\Users\Alex.Yates\OneDrive - Redgate\Documents\Data Masker(SqlServer)\Reports" />
+  </MaskingSetOptions>
+  <DMSSetContainer>
+    <DMSRuleBindingList>
+      <RuleController>
+        <DMSRule>
+          <RuleBlock Value="01" />
+          <RuleNumber Value="0001" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="00-0000-00" />
+          <Description Value="" />
+          <ExpandedState Value="True" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+        </DMSRule>
+        <DMSSchemaEntity_Login>
+          <N2KSQLServerEntity_Login>
+            <N2KSQLServerEntity />
+            <ServerName Value="(local)\" />
+            <AuthenticationMode Value="Windows_Authentication" />
+            <UserName Value="" />
+            <RememberPassword Value="False" />
+            <WantCloudConnection Value="False" />
+            <ConnectionTimeout Value="5" />
+            <DatabaseName Value="XMLMaskingDemoDatabase" />
+            <SchemaName Value="dbo" />
+            <OnlyTablesWithRowsWereFetched Value="False" />
+            <SchemaTables>
+              <DMSSchemaEntity_Table>
+                <N2KSQLServerEntity_Table>
+                  <N2KSQLServerEntity />
+                  <TableName Value="EMPLOYEE" />
+                  <RowCountInDB Value="3" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="ID" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="FirstName" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="LastName" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="Role" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="4" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMSSchemaEntity_Table>
+              <DMSSchemaEntity_Table>
+                <N2KSQLServerEntity_Table>
+                  <N2KSQLServerEntity />
+                  <TableName Value="EXPENSES" />
+                  <RowCountInDB Value="3" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="ID" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="EXPENSE" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="xml" />
+                        <OrdinalPosition Value="2" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMSSchemaEntity_Table>
+              <DMSSchemaEntity_Table>
+                <N2KSQLServerEntity_Table>
+                  <N2KSQLServerEntity />
+                  <TableName Value="EXPENSES_TEMP_001" />
+                  <RowCountInDB Value="0" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="ID" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="FirstName" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="LastName" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMSSchemaEntity_Table>
+            </SchemaTables>
+            <ExcludedTables />
+            <SchemaIndexes>
+              <DMSSchemaEntity_Index>
+                <N2KSQLServerEntity_Index>
+                  <N2KSQLServerEntity />
+                  <IndexName Value="PK__EMPLOYEE__3214EC2735B5F5CF" />
+                  <IndexTableName Value="EMPLOYEE" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Index>
+              </DMSSchemaEntity_Index>
+              <DMSSchemaEntity_Index>
+                <N2KSQLServerEntity_Index>
+                  <N2KSQLServerEntity />
+                  <IndexName Value="PK__EXPENSES__3214EC27E5841750" />
+                  <IndexTableName Value="EXPENSES" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Index>
+              </DMSSchemaEntity_Index>
+              <DMSSchemaEntity_Index>
+                <N2KSQLServerEntity_Index>
+                  <N2KSQLServerEntity />
+                  <IndexName Value="PK__EXPENSES__3214EC279CE77FC4" />
+                  <IndexTableName Value="EXPENSES_TEMP_001" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="ID" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Index>
+              </DMSSchemaEntity_Index>
+            </SchemaIndexes>
+            <ExcludedIndexes />
+            <SchemaForeignKeys />
+            <SchemaTriggers />
+            <SchemaIndexWithTableLists />
+          </N2KSQLServerEntity_Login>
+        </DMSSchemaEntity_Login>
+        <IDColName Value="Data MaskerTmpIDCol" />
+        <PKNamePrefix Value="PK_DataMaskerTmp_" />
+        <StatsTabPrefix Value="DMSSTAT_" />
+        <StatsInTableDB Value="True" />
+        <StatsDatabaseName Value="" />
+        <StatsSchemaName Value="" />
+      </RuleController>
+      <TriggerMgrRule>
+        <DMSRule>
+          <RuleBlock Value="00" />
+          <RuleNumber Value="0002" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="01-0001" />
+          <Description Value="" />
+          <ExpandedState Value="False" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+        </DMSRule>
+        <TriggerManagerActionType Value="DISABLE_TRIGGERS" />
+        <DMSRuleBindingList />
+      </TriggerMgrRule>
+      <TriggerMgrRule>
+        <DMSRule>
+          <RuleBlock Value="99" />
+          <RuleNumber Value="0003" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="01-0001" />
+          <Description Value="" />
+          <ExpandedState Value="False" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+        </DMSRule>
+        <TriggerManagerActionType Value="ENABLE_TRIGGERS" />
+        <DMSRuleBindingList />
+      </TriggerMgrRule>
+      <RuleCommand>
+        <DMSRule>
+          <RuleBlock Value="05" />
+          <RuleNumber Value="0004" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="01-0001" />
+          <Description Value="Extract sensitive XML data into seperate table" />
+          <ExpandedState Value="False" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+          <IgnoreErrorsContainer>
+            <WantToIgnoreErrors Value="False" />
+            <SkipDependentRulesOnIgnoredError Value="False" />
+            <IgnoreErrStr Value="1146" />
+            <IgnoreErrStr Value="doesn't exist" />
+          </IgnoreErrorsContainer>
+        </DMSRule>
+        <SqlStmt Value="-- Check if the table exists and delete it if it does&#xD;&#xA;IF OBJECT_ID('EXPENSES_TEMP_001', 'U') IS NOT NULL&#xD;&#xA;    DROP TABLE EXPENSES_TEMP_001;&#xD;&#xA;GO&#xD;&#xA;&#xD;&#xA;-- Create the EXPENSES_TEMP_001 table&#xD;&#xA;CREATE TABLE EXPENSES_TEMP_001 (&#xD;&#xA;	ID INT PRIMARY KEY,&#xD;&#xA;    FirstName NVARCHAR(50),&#xD;&#xA;    LastName NVARCHAR(50)&#xD;&#xA;);&#xD;&#xA;GO&#xD;&#xA;&#xD;&#xA;-- Insert data into EXPENSES_TEMP_001 table from EXPENSES table&#xD;&#xA;INSERT INTO EXPENSES_TEMP_001 (ID, FirstName, LastName)&#xD;&#xA;SELECT&#xD;&#xA;    ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS ID,&#xD;&#xA;    EXPENSE_XML.value('(EMPLOYEE_FIRSTNAME)[1]', 'NVARCHAR(50)') AS FirstName,&#xD;&#xA;    EXPENSE_XML.value('(EMPLOYEE_LASTNAME)[1]', 'NVARCHAR(50)') AS LastName&#xD;&#xA;FROM EXPENSES&#xD;&#xA;CROSS APPLY EXPENSES.EXPENSE.nodes('/EXPENSE') AS T(EXPENSE_XML);&#xD;&#xA;GO&#xD;&#xA;" />
+        <SemiColonBlockDelimiter Value="False" />
+        <ExitScriptOnError Value="False" />
+        <RuleStage Value="STAGE1" />
+        <SyncManagerRuleUsage Value="SYNCMGRUSAGE_NONE" />
+      </RuleCommand>
+      <RuleCommand>
+        <DMSRule>
+          <RuleBlock Value="05" />
+          <RuleNumber Value="0006" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="05-0004" />
+          <Description Value="Convert XML column to nvarchar(MAX) for masking run" />
+          <ExpandedState Value="False" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+          <IgnoreErrorsContainer>
+            <WantToIgnoreErrors Value="False" />
+            <SkipDependentRulesOnIgnoredError Value="False" />
+            <IgnoreErrStr Value="1146" />
+            <IgnoreErrStr Value="doesn't exist" />
+          </IgnoreErrorsContainer>
+        </DMSRule>
+        <SqlStmt Value="-- Add a new column for storing the XML data temporarily&#xD;&#xA;ALTER TABLE EXPENSES ADD EXPENSE_XML NVARCHAR(MAX);&#xD;&#xA;&#xD;&#xA;-- Update the new column with the XML data&#xD;&#xA;UPDATE EXPENSES&#xD;&#xA;SET EXPENSE_XML = CAST(EXPENSE AS NVARCHAR(MAX));&#xD;&#xA;&#xD;&#xA;-- Drop the original XML column&#xD;&#xA;ALTER TABLE EXPENSES DROP COLUMN EXPENSE;&#xD;&#xA;&#xD;&#xA;-- Rename the new column to the original column name&#xD;&#xA;EXEC sp_rename 'EXPENSES.EXPENSE_XML', 'EXPENSE', 'COLUMN';" />
+        <SemiColonBlockDelimiter Value="True" />
+        <ExitScriptOnError Value="False" />
+        <RuleStage Value="STAGE1" />
+        <SyncManagerRuleUsage Value="SYNCMGRUSAGE_NONE" />
+      </RuleCommand>
+      <RuleCommand>
+        <DMSRule>
+          <RuleBlock Value="95" />
+          <RuleNumber Value="0007" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="01-0001" />
+          <Description Value="Convert the XML column back from nvarchar(MAX) to XML data type" />
+          <ExpandedState Value="False" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+          <IgnoreErrorsContainer>
+            <WantToIgnoreErrors Value="False" />
+            <SkipDependentRulesOnIgnoredError Value="False" />
+            <IgnoreErrStr Value="1146" />
+            <IgnoreErrStr Value="doesn't exist" />
+          </IgnoreErrorsContainer>
+        </DMSRule>
+        <SqlStmt Value="-- Add a new XML column for storing the converted XML data temporarily&#xD;&#xA;ALTER TABLE EXPENSES ADD EXPENSE_XML_TEMP XML;&#xD;&#xA;GO&#xD;&#xA;&#xD;&#xA;-- Update the new XML column with the converted XML data&#xD;&#xA;UPDATE EXPENSES&#xD;&#xA;SET EXPENSE_XML_TEMP = CAST(EXPENSE AS XML);&#xD;&#xA;GO&#xD;&#xA;&#xD;&#xA;-- Drop the existing nvarchar(MAX) column&#xD;&#xA;ALTER TABLE EXPENSES DROP COLUMN EXPENSE;&#xD;&#xA;GO&#xD;&#xA;&#xD;&#xA;-- Rename the new XML column to the original column name&#xD;&#xA;EXEC sp_rename 'EXPENSES.EXPENSE_XML_TEMP', 'EXPENSE', 'COLUMN';&#xD;&#xA;GO" />
+        <SemiColonBlockDelimiter Value="False" />
+        <ExitScriptOnError Value="False" />
+        <RuleStage Value="STAGE1" />
+        <SyncManagerRuleUsage Value="SYNCMGRUSAGE_NONE" />
+      </RuleCommand>
+      <RuleCommand>
+        <DMSRule>
+          <RuleBlock Value="95" />
+          <RuleNumber Value="0008" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="01-0001" />
+          <Description Value="Drop EXPENSES_TEMP_001" />
+          <ExpandedState Value="False" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+          <IgnoreErrorsContainer>
+            <WantToIgnoreErrors Value="False" />
+            <SkipDependentRulesOnIgnoredError Value="False" />
+            <IgnoreErrStr Value="1146" />
+            <IgnoreErrStr Value="doesn't exist" />
+          </IgnoreErrorsContainer>
+        </DMSRule>
+        <SqlStmt Value="-- Check if the table exists and drop it if it does&#xD;&#xA;IF OBJECT_ID('EXPENSES_TEMP_001', 'U') IS NOT NULL&#xD;&#xA;    DROP TABLE EXPENSES_TEMP_001;&#xD;&#xA;GO" />
+        <SemiColonBlockDelimiter Value="False" />
+        <ExitScriptOnError Value="False" />
+        <RuleStage Value="STAGE1" />
+        <SyncManagerRuleUsage Value="SYNCMGRUSAGE_NONE" />
+      </RuleCommand>
+      <SyncManager>
+        <DMSRule>
+          <RuleBlock Value="15" />
+          <RuleNumber Value="0009" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="01-0001" />
+          <Description Value="" />
+          <ExpandedState Value="True" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+        </DMSRule>
+        <StagingTableName Value="TMP_DMS_0009_4895935" />
+        <DMSSchemaEntity_Table>
+          <N2KSQLServerEntity_Table>
+            <N2KSQLServerEntity />
+            <TableName Value="EMPLOYEE" />
+            <RowCountInDB Value="3" />
+            <IsTmp Value="False" />
+            <IsGTmp Value="False" />
+            <N2KSQLServerCollection_Column>
+              <DMSSchemaEntity_Column>
+                <N2KSQLServerEntity_Column>
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="FirstName" />
+                  <IsNullable Value="True" />
+                  <IsIdentity Value="False" />
+                  <ColumnDefault Value="" />
+                  <DataType Value="nvarchar" />
+                  <OrdinalPosition Value="1" />
+                  <CharacterMaximumLength Value="50" />
+                </N2KSQLServerEntity_Column>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMSSchemaEntity_Column>
+            </N2KSQLServerCollection_Column>
+          </N2KSQLServerEntity_Table>
+          <PlanType Value="WANTMASK_UNKNOWN" />
+          <PlanComments Value="" />
+        </DMSSchemaEntity_Table>
+        <PrimaryTableHasAllValues Value="False" />
+        <MaskStagingTableInOrder Value="False" />
+        <UseServerDefaultCollation Value="False" />
+        <SyncMgrRuleBindingList>
+          <RuleGroup>
+            <DMSRule>
+              <RuleBlock Value="15" />
+              <RuleNumber Value="0009" />
+              <RuleSubscript Value="01" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="00-0000-00" />
+              <Description Value="" />
+              <ExpandedState Value="True" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+            </DMSRule>
+          </RuleGroup>
+          <RuleCommand>
+            <DMSRule>
+              <RuleBlock Value="15" />
+              <RuleNumber Value="0009" />
+              <RuleSubscript Value="02" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="15-0009-01" />
+              <Description Value="Create XMLMaskingDemoDatabase.dbo.TMP_DMS_0009_4895935 Staging Table" />
+              <ExpandedState Value="True" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_TOP" />
+              <IgnoreErrorsContainer>
+                <WantToIgnoreErrors Value="True" />
+                <SkipDependentRulesOnIgnoredError Value="False" />
+                <IgnoreErrStr Value="3701" />
+                <IgnoreErrStr Value="Cannot drop the table" />
+              </IgnoreErrorsContainer>
+            </DMSRule>
+            <SqlStmt Value="drop table [XMLMaskingDemoDatabase].[dbo].[TMP_DMS_0009_4895935];&#xD;&#xA;&#xD;&#xA;CREATE table [XMLMaskingDemoDatabase].[dbo].[TMP_DMS_0009_4895935]&#xD;&#xA;(&#xD;&#xA;[DMSIdentityCol] INT IDENTITY(1,1) PRIMARY KEY,&#xD;&#xA;[FirstName] nvarchar(50),&#xD;&#xA;[FirstName_DMSTMP] nvarchar(50),&#xD;&#xA;[DMSCHECKCOL_12] int&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;CREATE INDEX [IX_DMSCHECKCOL_12] ON [XMLMaskingDemoDatabase].[dbo].[TMP_DMS_0009_4895935] ([DMSCHECKCOL_12] ASC)&#xD;&#xA;" />
+            <SemiColonBlockDelimiter Value="True" />
+            <ExitScriptOnError Value="False" />
+            <RuleStage Value="STAGE1" />
+            <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGCREATE" />
+            <SyncManagerReadOnly Value="True" />
+          </RuleCommand>
+          <RuleCommand>
+            <DMSRule>
+              <RuleBlock Value="15" />
+              <RuleNumber Value="0009" />
+              <RuleSubscript Value="03" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="15-0009-02" />
+              <Description Value="Truncate XMLMaskingDemoDatabase.XMLMaskingDemoDatabase.TMP_DMS_0009_4895935 Staging Table" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_CHAINED" />
+            </DMSRule>
+            <SqlStmt Value="TRUNCATE table [XMLMaskingDemoDatabase].[dbo].[TMP_DMS_0009_4895935]" />
+            <SemiColonBlockDelimiter Value="True" />
+            <ExitScriptOnError Value="False" />
+            <RuleStage Value="STAGE1" />
+            <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGTRUNC" />
+            <SyncManagerReadOnly Value="True" />
+          </RuleCommand>
+          <RuleSubstitution>
+            <DMSRule>
+              <RuleBlock Value="35" />
+              <RuleNumber Value="0009" />
+              <RuleSubscript Value="05" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="15-0009-01" />
+              <Description Value="Mask Staging Table" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_TOP" />
+              <DMSSchemaEntity_Table>
+                <N2KSQLServerEntity_Table>
+                  <N2KSQLServerEntity />
+                  <TableName Value="TMP_DMS_0009_4895935" />
+                  <RowCountInDB Value="3" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="FirstName" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="FirstName_DMSTMP" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMSSchemaEntity_Table>
+              <DMSSchemaEntity_Index>
+                <N2KSQLServerEntity_Index>
+                  <N2KSQLServerEntity />
+                  <IndexName Value="DMSStagingTablePK" />
+                  <IndexTableName Value="TMP_DMS_0009_4895935" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="True" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Index>
+              </DMSSchemaEntity_Index>
+            </DMSRule>
+            <TargetTableName Value="TMP_DMS_0009_4895935" />
+            <UseDefaultCommitFrequency Value="True" />
+            <WhereClauseAndSamplingContainer>
+              <WhereClause Value=" order by [FirstName]" />
+              <WhereClauseMode Value="No_WhereClause" />
+              <WantSamplePercent Value="False" />
+              <SamplePercentage Value="100.00" />
+              <WantRowLimit Value="False" />
+              <RowLimit Value="1000" />
+              <WantDistinctSet Value="False" />
+              <ForceInLineNullSkips Value="False" />
+            </WhereClauseAndSamplingContainer>
+            <RangeOptionsContainer>
+              <RangeClause Value="" />
+              <RangeLow Value="" />
+              <RangeHigh Value="" />
+            </RangeOptionsContainer>
+            <DMSPickedColumnAndDataSetCollection>
+              <DMSPickedColumnAndDataSet>
+                <N2KSQLServerEntity_PickedColumn>
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="FirstName_DMSTMP" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="2" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+                <DataSet_MFNAME>
+                  <UpperCaseText Value="False" />
+                  <UniqueValuesOnly Value="False" />
+                </DataSet_MFNAME>
+              </DMSPickedColumnAndDataSet>
+            </DMSPickedColumnAndDataSetCollection>
+          </RuleSubstitution>
+          <RuleTableToTable>
+            <DMSRule>
+              <RuleBlock Value="55" />
+              <RuleNumber Value="0009" />
+              <RuleSubscript Value="07" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="15-0009-01" />
+              <Description Value="Sync XMLMaskingDemoDatabase.EMPLOYEE from TMP_DMS_0009_4895935" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <DMSSchemaEntity_Table>
+                <N2KSQLServerEntity_Table>
+                  <N2KSQLServerEntity />
+                  <TableName Value="TMP_DMS_0009_4895935" />
+                  <RowCountInDB Value="3" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="FirstName" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="FirstName_DMSTMP" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMSSchemaEntity_Table>
+              <DMSSchemaEntity_Index>
+                <N2KSQLServerEntity_Index>
+                  <N2KSQLServerEntity />
+                  <IndexName Value="DMSStagingTablePK" />
+                  <IndexTableName Value="TMP_DMS_0009_4895935" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="True" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Index>
+              </DMSSchemaEntity_Index>
+            </DMSRule>
+            <SourceTableName Value="TMP_DMS_0009_4895935" />
+            <TargetTableName Value="EMPLOYEE" />
+            <TargetDatabaseName Value="XMLMaskingDemoDatabase" />
+            <TargetSchemaName Value="dbo" />
+            <PermitSrcSideDuplicates Value="False" />
+            <SingleStatmentModeActive Value="True" />
+            <ApplyWhereClauseToTgt Value="True" />
+            <WhereClauseEnabled Value="False" />
+            <WhereClause Value="WHERE ..." />
+            <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGSYNCPRIMARY" />
+            <JoinColumnCollection>
+              <N2KSQLServerEntity_PickedColumnPair>
+                <N2KSQLServerEntity />
+                <OrdinalPosition Value="-1" />
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol1">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="FirstName" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="1" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol2">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="FirstName" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="1" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+              </N2KSQLServerEntity_PickedColumnPair>
+            </JoinColumnCollection>
+            <SyncColumnCollection>
+              <N2KSQLServerEntity_PickedColumnPair>
+                <N2KSQLServerEntity />
+                <OrdinalPosition Value="-1" />
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol1">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="FirstName_DMSTMP" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="1" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol2">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="FirstName" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="1" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+              </N2KSQLServerEntity_PickedColumnPair>
+            </SyncColumnCollection>
+          </RuleTableToTable>
+          <FKMgrRule>
+            <DMSRule>
+              <RuleBlock Value="45" />
+              <RuleNumber Value="0009" />
+              <RuleSubscript Value="06" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="15-0009-01" />
+              <Description Value="Disable FKs on All Target Tables" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_TOP" />
+            </DMSRule>
+            <FKManagerActionType Value="DISABLE_FKS" />
+            <EnableNoValidate Value="False" />
+            <DMSRuleBindingList />
+          </FKMgrRule>
+          <FKMgrRule>
+            <DMSRule>
+              <RuleBlock Value="65" />
+              <RuleNumber Value="0009" />
+              <RuleSubscript Value="08" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="15-0009-01" />
+              <Description Value="Enable FKs on All Target Tables" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_TOP" />
+            </DMSRule>
+            <FKManagerActionType Value="ENABLE_FKS" />
+            <EnableNoValidate Value="False" />
+            <DMSRuleBindingList />
+          </FKMgrRule>
+          <RuleCommand>
+            <DMSRule>
+              <RuleBlock Value="75" />
+              <RuleNumber Value="0009" />
+              <RuleSubscript Value="09" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="15-0009-01" />
+              <Description Value="Drop XMLMaskingDemoDatabase.dbo.TMP_DMS_0009_4895935 Staging Table" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_TOP" />
+            </DMSRule>
+            <SqlStmt Value="DROP table [XMLMaskingDemoDatabase].[dbo].[TMP_DMS_0009_4895935]" />
+            <SemiColonBlockDelimiter Value="True" />
+            <ExitScriptOnError Value="False" />
+            <RuleStage Value="STAGE1" />
+            <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGDROP" />
+            <SyncManagerReadOnly Value="True" />
+          </RuleCommand>
+          <RuleTableToTable>
+            <DMSRule>
+              <RuleBlock Value="55" />
+              <RuleNumber Value="0009" />
+              <RuleSubscript Value="10" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="15-0009-01" />
+              <Description Value="Sync XMLMaskingDemoDatabase.EXPENSES_TEMP_001 from TMP_DMS_0009_4895935" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <DMSSchemaEntity_Table>
+                <N2KSQLServerEntity_Table>
+                  <N2KSQLServerEntity />
+                  <TableName Value="TMP_DMS_0009_4895935" />
+                  <RowCountInDB Value="3" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="FirstName" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="FirstName_DMSTMP" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMSSchemaEntity_Table>
+              <DMSSchemaEntity_Index>
+                <N2KSQLServerEntity_Index>
+                  <N2KSQLServerEntity />
+                  <IndexName Value="DMSStagingTablePK" />
+                  <IndexTableName Value="TMP_DMS_0009_4895935" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="True" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Index>
+              </DMSSchemaEntity_Index>
+            </DMSRule>
+            <SourceTableName Value="TMP_DMS_0009_4895935" />
+            <TargetTableName Value="EXPENSES_TEMP_001" />
+            <TargetDatabaseName Value="XMLMaskingDemoDatabase" />
+            <TargetSchemaName Value="dbo" />
+            <PermitSrcSideDuplicates Value="False" />
+            <SingleStatmentModeActive Value="True" />
+            <ApplyWhereClauseToTgt Value="True" />
+            <WhereClauseEnabled Value="False" />
+            <WhereClause Value="WHERE ..." />
+            <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGSYNCSECONDARY" />
+            <JoinColumnCollection>
+              <N2KSQLServerEntity_PickedColumnPair>
+                <N2KSQLServerEntity />
+                <OrdinalPosition Value="-1" />
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol1">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="FirstName" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="1" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol2">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="FirstName" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="2" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+              </N2KSQLServerEntity_PickedColumnPair>
+            </JoinColumnCollection>
+            <SyncColumnCollection>
+              <N2KSQLServerEntity_PickedColumnPair>
+                <N2KSQLServerEntity />
+                <OrdinalPosition Value="-1" />
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol1">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="FirstName_DMSTMP" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="1" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol2">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="FirstName" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="2" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+              </N2KSQLServerEntity_PickedColumnPair>
+            </SyncColumnCollection>
+          </RuleTableToTable>
+          <RuleTableToText>
+            <DMSRule>
+              <RuleBlock Value="55" />
+              <RuleNumber Value="0009" />
+              <RuleSubscript Value="12" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="15-0009-01" />
+              <Description Value="Sync text in target table and column from TMP_DMS_0009_4895935" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <DMSSchemaEntity_Table>
+                <N2KSQLServerEntity_Table>
+                  <N2KSQLServerEntity />
+                  <TableName Value="TMP_DMS_0009_4895935" />
+                  <RowCountInDB Value="3" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="FirstName" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="FirstName_DMSTMP" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMSSchemaEntity_Table>
+              <DMSSchemaEntity_Index>
+                <N2KSQLServerEntity_Index>
+                  <N2KSQLServerEntity />
+                  <IndexName Value="DMSStagingTablePK" />
+                  <IndexTableName Value="TMP_DMS_0009_4895935" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="True" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Index>
+              </DMSSchemaEntity_Index>
+            </DMSRule>
+            <SourceColumnName Value="FirstName" />
+            <TargetDatabaseName Value="XMLMaskingDemoDatabase" />
+            <TargetSchemaName Value="dbo" />
+            <TargetTableName Value="EXPENSES" />
+            <TargetColumnName Value="EXPENSE" />
+            <OneSrcPerTgtRow Value="True" />
+            <DelimiterList Value=" ,.?!'&amp;-_@&quot;()[]{}&lt;&gt;\r\n\t" />
+            <WantXMLPath Value="False" />
+            <XmlPath Value="/Sample/PersonInfo/StreetInfo" />
+            <UseCommonCheckColumn Value="False" />
+            <NoBuildCheckColumn Value="False" />
+            <WhereClauseAndSamplingContainer>
+              <WhereClause Value="where ..." />
+              <WhereClauseMode Value="Where_NotNullOrEmpty" />
+              <WantSamplePercent Value="False" />
+              <SamplePercentage Value="100.00" />
+              <WantRowLimit Value="False" />
+              <RowLimit Value="1000" />
+              <WantDistinctSet Value="False" />
+              <ForceInLineNullSkips Value="False" />
+            </WhereClauseAndSamplingContainer>
+          </RuleTableToText>
+          <RuleCommand>
+            <DMSRule>
+              <RuleBlock Value="25" />
+              <RuleNumber Value="0009" />
+              <RuleSubscript Value="04" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="15-0009-01" />
+              <Description Value="Populate dbo.TMP_DMS_0009_4895935 Staging Table from EMPLOYEE" />
+              <ExpandedState Value="True" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_TOP" />
+            </DMSRule>
+            <SqlStmt Value="INSERT INTO [dbo].[TMP_DMS_0009_4895935] ([FirstName],[FirstName_DMSTMP]) select distinct [FirstName],[FirstName] from [dbo].[EMPLOYEE] DM1 WHERE [FirstName] Is Not Null and [FirstName] &lt;&gt; ''" />
+            <SemiColonBlockDelimiter Value="True" />
+            <ExitScriptOnError Value="False" />
+            <RuleStage Value="STAGE1" />
+            <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGPOPULATESECONDARY" />
+            <SyncManagerReadOnly Value="True" />
+            <SyncManagerTargetTable Value="EMPLOYEE" />
+            <SyncManagerTargetSchema Value="dbo" />
+            <SyncManagerTargetDatabase Value="XMLMaskingDemoDatabase" />
+            <SyncManagerColumnNames Value="[FirstName]" />
+            <SyncManagerDefaultString1 Value="Populate dbo.TMP_DMS_0005_1571525 Staging Table from EMPLOYEE" />
+            <SyncManagerDefaultString2 Value="INSERT INTO [dbo].[TMP_DMS_0005_1571525] ([FirstName],[FirstName_DMSTMP]) select distinct [FirstName],[FirstName] from [dbo].[EMPLOYEE] DM1 WHERE [FirstName] Is Not Null and [FirstName] &lt;&gt; ''" />
+          </RuleCommand>
+          <RuleCommand>
+            <DMSRule>
+              <RuleBlock Value="25" />
+              <RuleNumber Value="0009" />
+              <RuleSubscript Value="11" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="25-0009-04" />
+              <Description Value="Check EXPENSES_TEMP_001 for missing keys, update dbo.TMP_DMS_0009_4895935" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_CHAINED" />
+            </DMSRule>
+            <SqlStmt Value="INSERT INTO [dbo].[TMP_DMS_0009_4895935] ([FirstName],[FirstName_DMSTMP]) select distinct [FirstName],[FirstName] from [XMLMaskingDemoDatabase].[dbo].[EXPENSES_TEMP_001] DM1 WHERE [FirstName] Is Not Null and [FirstName] &lt;&gt; ''&#xD;&#xA;EXCEPT&#xD;&#xA;SELECT [FirstName], [FirstName] from  [dbo].[TMP_DMS_0009_4895935]" />
+            <SemiColonBlockDelimiter Value="True" />
+            <ExitScriptOnError Value="False" />
+            <RuleStage Value="STAGE1" />
+            <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGPOPULATESECONDARY" />
+            <SyncManagerReadOnly Value="True" />
+            <SyncManagerTargetTable Value="EXPENSES_TEMP_001" />
+            <SyncManagerTargetSchema Value="dbo" />
+            <SyncManagerTargetDatabase Value="XMLMaskingDemoDatabase" />
+            <SyncManagerColumnNames Value="[FirstName]" />
+            <SyncManagerDefaultString1 Value="Check EXPENSES_TEMP_001 for missing keys, update dbo.TMP_DMS_0005_1571525" />
+            <SyncManagerDefaultString2 Value="INSERT INTO [dbo].[TMP_DMS_0005_1571525] ([FirstName],[FirstName_DMSTMP]) select distinct [FirstName],[FirstName] from [XMLMaskingDemoDatabase].[dbo].[EXPENSES_TEMP_001] DM1 WHERE [FirstName] Is Not Null and [FirstName] &lt;&gt; ''&#xD;&#xA;EXCEPT&#xD;&#xA;SELECT [FirstName], [FirstName] from  [dbo].[TMP_DMS_0005_1571525]" />
+          </RuleCommand>
+        </SyncMgrRuleBindingList>
+        <WhereClauseAndSamplingContainer>
+          <WhereClause Value="where ..." />
+          <WhereClauseMode Value="Where_NotNullOrEmpty" />
+          <WantSamplePercent Value="False" />
+          <SamplePercentage Value="100.00" />
+          <WantRowLimit Value="False" />
+          <RowLimit Value="1000" />
+          <WantDistinctSet Value="False" />
+          <ForceInLineNullSkips Value="False" />
+        </WhereClauseAndSamplingContainer>
+      </SyncManager>
+      <SyncManager>
+        <DMSRule>
+          <RuleBlock Value="16" />
+          <RuleNumber Value="0010" />
+          <RuleSubscript Value="-01" />
+          <IsDisabled Value="False" />
+          <IsBulk Value="False" />
+          <WantMultipleActiveResultSets Value="False" />
+          <IsManagedRule Value="False" />
+          <CommitFreq Value="1000" />
+          <SerializedParentRuleID Value="01-0001" />
+          <Description Value="" />
+          <ExpandedState Value="True" />
+          <ForceIsNullsOff Value="False" />
+          <UserSpecifiedRIDIndexEnabled Value="False" />
+          <UserSpecifiedRIDIndex Value="" />
+        </DMSRule>
+        <StagingTableName Value="TMP_DMS_0010_9013822" />
+        <DMSSchemaEntity_Table>
+          <N2KSQLServerEntity_Table>
+            <N2KSQLServerEntity />
+            <TableName Value="EMPLOYEE" />
+            <RowCountInDB Value="3" />
+            <IsTmp Value="False" />
+            <IsGTmp Value="False" />
+            <N2KSQLServerCollection_Column>
+              <DMSSchemaEntity_Column>
+                <N2KSQLServerEntity_Column>
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="LastName" />
+                  <IsNullable Value="True" />
+                  <IsIdentity Value="False" />
+                  <ColumnDefault Value="" />
+                  <DataType Value="nvarchar" />
+                  <OrdinalPosition Value="1" />
+                  <CharacterMaximumLength Value="50" />
+                </N2KSQLServerEntity_Column>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMSSchemaEntity_Column>
+            </N2KSQLServerCollection_Column>
+          </N2KSQLServerEntity_Table>
+          <PlanType Value="WANTMASK_UNKNOWN" />
+          <PlanComments Value="" />
+        </DMSSchemaEntity_Table>
+        <PrimaryTableHasAllValues Value="False" />
+        <MaskStagingTableInOrder Value="False" />
+        <UseServerDefaultCollation Value="False" />
+        <SyncMgrRuleBindingList>
+          <RuleGroup>
+            <DMSRule>
+              <RuleBlock Value="16" />
+              <RuleNumber Value="0010" />
+              <RuleSubscript Value="01" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="00-0000-00" />
+              <Description Value="" />
+              <ExpandedState Value="True" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+            </DMSRule>
+          </RuleGroup>
+          <RuleCommand>
+            <DMSRule>
+              <RuleBlock Value="15" />
+              <RuleNumber Value="0010" />
+              <RuleSubscript Value="02" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="16-0010-01" />
+              <Description Value="Create XMLMaskingDemoDatabase.dbo.TMP_DMS_0010_9013822 Staging Table" />
+              <ExpandedState Value="True" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_TOP" />
+              <IgnoreErrorsContainer>
+                <WantToIgnoreErrors Value="True" />
+                <SkipDependentRulesOnIgnoredError Value="False" />
+                <IgnoreErrStr Value="3701" />
+                <IgnoreErrStr Value="Cannot drop the table" />
+              </IgnoreErrorsContainer>
+            </DMSRule>
+            <SqlStmt Value="drop table [XMLMaskingDemoDatabase].[dbo].[TMP_DMS_0010_9013822];&#xD;&#xA;&#xD;&#xA;CREATE table [XMLMaskingDemoDatabase].[dbo].[TMP_DMS_0010_9013822]&#xD;&#xA;(&#xD;&#xA;[DMSIdentityCol] INT IDENTITY(1,1) PRIMARY KEY,&#xD;&#xA;[LastName] nvarchar(50),&#xD;&#xA;[LastName_DMSTMP] nvarchar(50),&#xD;&#xA;[DMSCHECKCOL_12] int&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;CREATE INDEX [IX_DMSCHECKCOL_12] ON [XMLMaskingDemoDatabase].[dbo].[TMP_DMS_0010_9013822] ([DMSCHECKCOL_12] ASC)&#xD;&#xA;" />
+            <SemiColonBlockDelimiter Value="True" />
+            <ExitScriptOnError Value="False" />
+            <RuleStage Value="STAGE1" />
+            <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGCREATE" />
+            <SyncManagerReadOnly Value="True" />
+          </RuleCommand>
+          <RuleCommand>
+            <DMSRule>
+              <RuleBlock Value="15" />
+              <RuleNumber Value="0010" />
+              <RuleSubscript Value="03" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="15-0010-02" />
+              <Description Value="Truncate XMLMaskingDemoDatabase.XMLMaskingDemoDatabase.TMP_DMS_0010_9013822 Staging Table" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_CHAINED" />
+            </DMSRule>
+            <SqlStmt Value="TRUNCATE table [XMLMaskingDemoDatabase].[dbo].[TMP_DMS_0010_9013822]" />
+            <SemiColonBlockDelimiter Value="True" />
+            <ExitScriptOnError Value="False" />
+            <RuleStage Value="STAGE1" />
+            <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGTRUNC" />
+            <SyncManagerReadOnly Value="True" />
+          </RuleCommand>
+          <RuleSubstitution>
+            <DMSRule>
+              <RuleBlock Value="35" />
+              <RuleNumber Value="0010" />
+              <RuleSubscript Value="05" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="16-0010-01" />
+              <Description Value="Mask Staging Table" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_TOP" />
+              <DMSSchemaEntity_Table>
+                <N2KSQLServerEntity_Table>
+                  <N2KSQLServerEntity />
+                  <TableName Value="TMP_DMS_0010_9013822" />
+                  <RowCountInDB Value="3" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="LastName" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="LastName_DMSTMP" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMSSchemaEntity_Table>
+              <DMSSchemaEntity_Index>
+                <N2KSQLServerEntity_Index>
+                  <N2KSQLServerEntity />
+                  <IndexName Value="DMSStagingTablePK" />
+                  <IndexTableName Value="TMP_DMS_0010_9013822" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="True" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Index>
+              </DMSSchemaEntity_Index>
+            </DMSRule>
+            <TargetTableName Value="TMP_DMS_0010_9013822" />
+            <UseDefaultCommitFrequency Value="True" />
+            <WhereClauseAndSamplingContainer>
+              <WhereClause Value=" order by [LastName]" />
+              <WhereClauseMode Value="No_WhereClause" />
+              <WantSamplePercent Value="False" />
+              <SamplePercentage Value="100.00" />
+              <WantRowLimit Value="False" />
+              <RowLimit Value="1000" />
+              <WantDistinctSet Value="False" />
+              <ForceInLineNullSkips Value="False" />
+            </WhereClauseAndSamplingContainer>
+            <RangeOptionsContainer>
+              <RangeClause Value="" />
+              <RangeLow Value="" />
+              <RangeHigh Value="" />
+            </RangeOptionsContainer>
+            <DMSPickedColumnAndDataSetCollection>
+              <DMSPickedColumnAndDataSet>
+                <N2KSQLServerEntity_PickedColumn>
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="LastName_DMSTMP" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="3" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+                <DataSet_LNAMEL>
+                  <UpperCaseText Value="False" />
+                  <UniqueValuesOnly Value="False" />
+                </DataSet_LNAMEL>
+              </DMSPickedColumnAndDataSet>
+            </DMSPickedColumnAndDataSetCollection>
+          </RuleSubstitution>
+          <RuleTableToTable>
+            <DMSRule>
+              <RuleBlock Value="55" />
+              <RuleNumber Value="0010" />
+              <RuleSubscript Value="07" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="16-0010-01" />
+              <Description Value="Sync XMLMaskingDemoDatabase.EMPLOYEE from TMP_DMS_0010_9013822" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <DMSSchemaEntity_Table>
+                <N2KSQLServerEntity_Table>
+                  <N2KSQLServerEntity />
+                  <TableName Value="TMP_DMS_0010_9013822" />
+                  <RowCountInDB Value="3" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="LastName" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="LastName_DMSTMP" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMSSchemaEntity_Table>
+              <DMSSchemaEntity_Index>
+                <N2KSQLServerEntity_Index>
+                  <N2KSQLServerEntity />
+                  <IndexName Value="DMSStagingTablePK" />
+                  <IndexTableName Value="TMP_DMS_0010_9013822" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="True" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Index>
+              </DMSSchemaEntity_Index>
+            </DMSRule>
+            <SourceTableName Value="TMP_DMS_0010_9013822" />
+            <TargetTableName Value="EMPLOYEE" />
+            <TargetDatabaseName Value="XMLMaskingDemoDatabase" />
+            <TargetSchemaName Value="dbo" />
+            <PermitSrcSideDuplicates Value="False" />
+            <SingleStatmentModeActive Value="True" />
+            <ApplyWhereClauseToTgt Value="True" />
+            <WhereClauseEnabled Value="False" />
+            <WhereClause Value="WHERE ..." />
+            <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGSYNCPRIMARY" />
+            <JoinColumnCollection>
+              <N2KSQLServerEntity_PickedColumnPair>
+                <N2KSQLServerEntity />
+                <OrdinalPosition Value="-1" />
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol1">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="LastName" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="1" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol2">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="LastName" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="1" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+              </N2KSQLServerEntity_PickedColumnPair>
+            </JoinColumnCollection>
+            <SyncColumnCollection>
+              <N2KSQLServerEntity_PickedColumnPair>
+                <N2KSQLServerEntity />
+                <OrdinalPosition Value="-1" />
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol1">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="LastName_DMSTMP" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="1" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol2">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="LastName" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="1" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+              </N2KSQLServerEntity_PickedColumnPair>
+            </SyncColumnCollection>
+          </RuleTableToTable>
+          <FKMgrRule>
+            <DMSRule>
+              <RuleBlock Value="45" />
+              <RuleNumber Value="0010" />
+              <RuleSubscript Value="06" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="16-0010-01" />
+              <Description Value="Disable FKs on All Target Tables" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_TOP" />
+            </DMSRule>
+            <FKManagerActionType Value="DISABLE_FKS" />
+            <EnableNoValidate Value="False" />
+            <DMSRuleBindingList />
+          </FKMgrRule>
+          <FKMgrRule>
+            <DMSRule>
+              <RuleBlock Value="65" />
+              <RuleNumber Value="0010" />
+              <RuleSubscript Value="08" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="16-0010-01" />
+              <Description Value="Enable FKs on All Target Tables" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_TOP" />
+            </DMSRule>
+            <FKManagerActionType Value="ENABLE_FKS" />
+            <EnableNoValidate Value="False" />
+            <DMSRuleBindingList />
+          </FKMgrRule>
+          <RuleCommand>
+            <DMSRule>
+              <RuleBlock Value="75" />
+              <RuleNumber Value="0010" />
+              <RuleSubscript Value="09" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="16-0010-01" />
+              <Description Value="Drop XMLMaskingDemoDatabase.dbo.TMP_DMS_0010_9013822 Staging Table" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_TOP" />
+            </DMSRule>
+            <SqlStmt Value="DROP table [XMLMaskingDemoDatabase].[dbo].[TMP_DMS_0010_9013822]" />
+            <SemiColonBlockDelimiter Value="True" />
+            <ExitScriptOnError Value="False" />
+            <RuleStage Value="STAGE1" />
+            <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGDROP" />
+            <SyncManagerReadOnly Value="True" />
+          </RuleCommand>
+          <RuleTableToTable>
+            <DMSRule>
+              <RuleBlock Value="55" />
+              <RuleNumber Value="0010" />
+              <RuleSubscript Value="10" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="16-0010-01" />
+              <Description Value="Sync XMLMaskingDemoDatabase.EXPENSES_TEMP_001 from TMP_DMS_0010_9013822" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <DMSSchemaEntity_Table>
+                <N2KSQLServerEntity_Table>
+                  <N2KSQLServerEntity />
+                  <TableName Value="TMP_DMS_0010_9013822" />
+                  <RowCountInDB Value="3" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="LastName" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="LastName_DMSTMP" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMSSchemaEntity_Table>
+              <DMSSchemaEntity_Index>
+                <N2KSQLServerEntity_Index>
+                  <N2KSQLServerEntity />
+                  <IndexName Value="DMSStagingTablePK" />
+                  <IndexTableName Value="TMP_DMS_0010_9013822" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="True" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Index>
+              </DMSSchemaEntity_Index>
+            </DMSRule>
+            <SourceTableName Value="TMP_DMS_0010_9013822" />
+            <TargetTableName Value="EXPENSES_TEMP_001" />
+            <TargetDatabaseName Value="XMLMaskingDemoDatabase" />
+            <TargetSchemaName Value="dbo" />
+            <PermitSrcSideDuplicates Value="False" />
+            <SingleStatmentModeActive Value="True" />
+            <ApplyWhereClauseToTgt Value="True" />
+            <WhereClauseEnabled Value="False" />
+            <WhereClause Value="WHERE ..." />
+            <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGSYNCSECONDARY" />
+            <JoinColumnCollection>
+              <N2KSQLServerEntity_PickedColumnPair>
+                <N2KSQLServerEntity />
+                <OrdinalPosition Value="-1" />
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol1">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="LastName" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="1" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol2">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="LastName" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="3" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+              </N2KSQLServerEntity_PickedColumnPair>
+            </JoinColumnCollection>
+            <SyncColumnCollection>
+              <N2KSQLServerEntity_PickedColumnPair>
+                <N2KSQLServerEntity />
+                <OrdinalPosition Value="-1" />
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol1">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="LastName_DMSTMP" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="1" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+                <N2KSQLServerEntity_PickedColumn OBJNAME="PickedCol2">
+                  <N2KSQLServerEntity />
+                  <ColumnName Value="LastName" />
+                  <ColumnFullDataType Value="nvarchar(50)" />
+                  <ColumnConversionWrapper Value="" />
+                  <ColumnConversionEnabled Value="False" />
+                  <OrdinalPosition Value="3" />
+                  <DataType Value="nvarchar" />
+                  <IsPseudoColumn Value="False" />
+                  <DisplayUndefinedTextIfDatatypeNotDefined Value="True" />
+                </N2KSQLServerEntity_PickedColumn>
+              </N2KSQLServerEntity_PickedColumnPair>
+            </SyncColumnCollection>
+          </RuleTableToTable>
+          <RuleTableToText>
+            <DMSRule>
+              <RuleBlock Value="55" />
+              <RuleNumber Value="0010" />
+              <RuleSubscript Value="12" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="16-0010-01" />
+              <Description Value="Sync text in target table and column from TMP_DMS_0010_9013822" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <DMSSchemaEntity_Table>
+                <N2KSQLServerEntity_Table>
+                  <N2KSQLServerEntity />
+                  <TableName Value="TMP_DMS_0010_9013822" />
+                  <RowCountInDB Value="3" />
+                  <IsTmp Value="False" />
+                  <IsGTmp Value="False" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="LastName" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="2" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="LastName_DMSTMP" />
+                        <IsNullable Value="True" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="nvarchar" />
+                        <OrdinalPosition Value="3" />
+                        <CharacterMaximumLength Value="50" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Table>
+                <PlanType Value="WANTMASK_UNKNOWN" />
+                <PlanComments Value="" />
+              </DMSSchemaEntity_Table>
+              <DMSSchemaEntity_Index>
+                <N2KSQLServerEntity_Index>
+                  <N2KSQLServerEntity />
+                  <IndexName Value="DMSStagingTablePK" />
+                  <IndexTableName Value="TMP_DMS_0010_9013822" />
+                  <IsUnique Value="True" />
+                  <IsPrimaryKey Value="True" />
+                  <IsInternalAdditional Value="True" />
+                  <N2KSQLServerCollection_Column>
+                    <DMSSchemaEntity_Column>
+                      <N2KSQLServerEntity_Column>
+                        <N2KSQLServerEntity />
+                        <ColumnName Value="DMSIdentityCol" />
+                        <IsNullable Value="False" />
+                        <IsIdentity Value="False" />
+                        <ColumnDefault Value="" />
+                        <DataType Value="int" />
+                        <OrdinalPosition Value="1" />
+                      </N2KSQLServerEntity_Column>
+                      <PlanType Value="WANTMASK_UNKNOWN" />
+                      <PlanComments Value="" />
+                    </DMSSchemaEntity_Column>
+                  </N2KSQLServerCollection_Column>
+                </N2KSQLServerEntity_Index>
+              </DMSSchemaEntity_Index>
+            </DMSRule>
+            <SourceColumnName Value="LastName" />
+            <TargetDatabaseName Value="XMLMaskingDemoDatabase" />
+            <TargetSchemaName Value="dbo" />
+            <TargetTableName Value="EXPENSES" />
+            <TargetColumnName Value="EXPENSE" />
+            <OneSrcPerTgtRow Value="True" />
+            <DelimiterList Value=" ,.?!'&amp;-_@&quot;()[]{}&lt;&gt;\r\n\t" />
+            <WantXMLPath Value="False" />
+            <XmlPath Value="/EXPENSE/EMPLOYEE_LASTNAME" />
+            <UseCommonCheckColumn Value="False" />
+            <NoBuildCheckColumn Value="False" />
+            <WhereClauseAndSamplingContainer>
+              <WhereClause Value="where ..." />
+              <WhereClauseMode Value="No_WhereClause" />
+              <WantSamplePercent Value="False" />
+              <SamplePercentage Value="100.00" />
+              <WantRowLimit Value="False" />
+              <RowLimit Value="1000" />
+              <WantDistinctSet Value="False" />
+              <ForceInLineNullSkips Value="False" />
+            </WhereClauseAndSamplingContainer>
+          </RuleTableToText>
+          <RuleCommand>
+            <DMSRule>
+              <RuleBlock Value="25" />
+              <RuleNumber Value="0010" />
+              <RuleSubscript Value="04" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="16-0010-01" />
+              <Description Value="Populate dbo.TMP_DMS_0010_9013822 Staging Table from EMPLOYEE" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_TOP" />
+            </DMSRule>
+            <SqlStmt Value="INSERT INTO [dbo].[TMP_DMS_0010_9013822] ([LastName],[LastName_DMSTMP]) select distinct [LastName],[LastName] from [dbo].[EMPLOYEE] DM1 WHERE [LastName] Is Not Null and [LastName] &lt;&gt; ''" />
+            <SemiColonBlockDelimiter Value="True" />
+            <ExitScriptOnError Value="False" />
+            <RuleStage Value="STAGE1" />
+            <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGPOPULATESECONDARY" />
+            <SyncManagerReadOnly Value="True" />
+            <SyncManagerTargetTable Value="EMPLOYEE" />
+            <SyncManagerTargetSchema Value="dbo" />
+            <SyncManagerTargetDatabase Value="XMLMaskingDemoDatabase" />
+            <SyncManagerColumnNames Value="[LastName]" />
+            <SyncManagerDefaultString1 Value="Populate dbo.TMP_DMS_0010_9013822 Staging Table from EMPLOYEE" />
+            <SyncManagerDefaultString2 Value="INSERT INTO [dbo].[TMP_DMS_0010_9013822] ([LastName],[LastName_DMSTMP]) select distinct [LastName],[LastName] from [dbo].[EMPLOYEE] DM1 WHERE [LastName] Is Not Null and [LastName] &lt;&gt; ''" />
+          </RuleCommand>
+          <RuleCommand>
+            <DMSRule>
+              <RuleBlock Value="25" />
+              <RuleNumber Value="0010" />
+              <RuleSubscript Value="11" />
+              <IsDisabled Value="False" />
+              <IsBulk Value="False" />
+              <WantMultipleActiveResultSets Value="False" />
+              <IsManagedRule Value="True" />
+              <CommitFreq Value="1000" />
+              <SerializedParentRuleID Value="25-0010-04" />
+              <Description Value="Check EXPENSES_TEMP_001 for missing keys, update dbo.TMP_DMS_0010_9013822" />
+              <ExpandedState Value="False" />
+              <ForceIsNullsOff Value="False" />
+              <UserSpecifiedRIDIndexEnabled Value="False" />
+              <UserSpecifiedRIDIndex Value="" />
+              <RuleGroupRuleLevel Value="RULEGROUPRULELEVEL_CHAINED" />
+            </DMSRule>
+            <SqlStmt Value="INSERT INTO [dbo].[TMP_DMS_0010_9013822] ([LastName],[LastName_DMSTMP]) select distinct [LastName],[LastName] from [XMLMaskingDemoDatabase].[dbo].[EXPENSES_TEMP_001] DM1 WHERE [LastName] Is Not Null and [LastName] &lt;&gt; ''&#xD;&#xA;EXCEPT&#xD;&#xA;SELECT [LastName], [LastName] from  [dbo].[TMP_DMS_0010_9013822]" />
+            <SemiColonBlockDelimiter Value="True" />
+            <ExitScriptOnError Value="False" />
+            <RuleStage Value="STAGE1" />
+            <SyncManagerRuleUsage Value="SYNCMGRUSAGE_STAGINGPOPULATESECONDARY" />
+            <SyncManagerReadOnly Value="True" />
+            <SyncManagerTargetTable Value="EXPENSES_TEMP_001" />
+            <SyncManagerTargetSchema Value="dbo" />
+            <SyncManagerTargetDatabase Value="XMLMaskingDemoDatabase" />
+            <SyncManagerColumnNames Value="[LastName]" />
+            <SyncManagerDefaultString1 Value="Check EXPENSES_TEMP_001 for missing keys, update dbo.TMP_DMS_0010_9013822" />
+            <SyncManagerDefaultString2 Value="INSERT INTO [dbo].[TMP_DMS_0010_9013822] ([LastName],[LastName_DMSTMP]) select distinct [LastName],[LastName] from [XMLMaskingDemoDatabase].[dbo].[EXPENSES_TEMP_001] DM1 WHERE [LastName] Is Not Null and [LastName] &lt;&gt; ''&#xD;&#xA;EXCEPT&#xD;&#xA;SELECT [LastName], [LastName] from  [dbo].[TMP_DMS_0010_9013822]" />
+          </RuleCommand>
+        </SyncMgrRuleBindingList>
+        <WhereClauseAndSamplingContainer>
+          <WhereClause Value="where ..." />
+          <WhereClauseMode Value="Where_NotNullOrEmpty" />
+          <WantSamplePercent Value="False" />
+          <SamplePercentage Value="100.00" />
+          <WantRowLimit Value="False" />
+          <RowLimit Value="1000" />
+          <WantDistinctSet Value="False" />
+          <ForceInLineNullSkips Value="False" />
+        </WhereClauseAndSamplingContainer>
+      </SyncManager>
+    </DMSRuleBindingList>
+  </DMSSetContainer>
+</DMSSetContainer_MaskingSet>
